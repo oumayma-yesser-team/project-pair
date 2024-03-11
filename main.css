@@ -60,14 +60,7 @@ body {
 
   }
 
-  #contactLogo{
 
-    width: 0.01px;
-    height: 0.01px;
-   
-   
-     }
-   
 
   .background-container {
     background: url('images/BB1ie2HH.jpg');
@@ -76,3 +69,25 @@ body {
     background-position: center;
     height: 100vh; 
   }
+  
+  .column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio while filling the box */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.container1{
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 180px;
+}
+
+#book1 {
+
+    text-align: center;
+}
