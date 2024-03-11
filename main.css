@@ -1,7 +1,4 @@
-body {
-    margin : 0;
-    padding: 0;
-}
+
 
 * {
     margin: 0;
@@ -24,18 +21,29 @@ body {
 
   }
 
-  #reaserchBar {
+  #reasearchBarContainer{
 
-    padding-left: 250px;
-    padding-top: 8px;
-    border-radius: 20px;
+    margin : 1px;
+    padding-top: 16px;
+    
 
   }
-  #reaserchBarDiv {
 
-    margin-right: 750px;
-    margin-top: 10px;
+
+
+
+  #reasearchBar {
+
+    padding-left: 200px;
+    margin-right: 550px;
+    border-radius: 10px;
+    height: 25px;
+    text-align: left;
+   
+    
+
   }
+ 
 
 
   nav a {
@@ -45,7 +53,8 @@ body {
     padding: 15px 30px;
     font-size: x-large;
     text-align: center;
-
+    font-style: oblique;
+    text-shadow: #333;
   }
   
   nav a:hover {
@@ -65,29 +74,56 @@ body {
   .background-container {
     background: url('images/BB1ie2HH.jpg');
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-position: center;
-    height: 100vh; 
-  }
-  
-  .column img {
-    width: 100%;
     height: 100%;
-    object-fit: cover; /* Maintain aspect ratio while filling the box */
-    position: absolute;
-    top: 0;
-    left: 0;
+    width:100%;
+    align-items: center;
+    padding-top: 100px;
 }
+  
 
+
+.books img {
+    width: 180px; 
+    height: 250px;
+}
 
 .container1{
-
+    
     display: flex;
     justify-content: space-between;
-    padding-top: 180px;
+    padding-top: 220px;
+    margin : 20px;
+    
+    
 }
 
-#book1 {
+.container2{
+    
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin : 20px;
+   
+}
+
+
+.container3{
+    
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    margin : 20px
+    
+}
+
+.books {
 
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
 }
+
+
+
