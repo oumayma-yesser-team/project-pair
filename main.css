@@ -1,0 +1,78 @@
+body {
+    margin : 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  nav {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    background-color: #333;
+    padding-top: 10px;
+    width: 100%;
+    
+  }
+  #div1{
+    display: flex;
+
+  }
+
+  #reaserchBar {
+
+    padding-left: 250px;
+    padding-top: 8px;
+    border-radius: 20px;
+
+  }
+  #reaserchBarDiv {
+
+    margin-right: 750px;
+    margin-top: 10px;
+  }
+
+
+  nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: x-large;
+    text-align: center;
+
+  }
+  
+  nav a:hover {
+    background-color: #737373;
+  }
+  
+  #cartLogo{
+
+ width: 30px;
+ height: 30px;
+
+
+  }
+
+  #contactLogo{
+
+    width: 0.01px;
+    height: 0.01px;
+   
+   
+     }
+   
+
+  .background-container {
+    background: url('images/BB1ie2HH.jpg');
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+    height: 100vh; 
+  }
