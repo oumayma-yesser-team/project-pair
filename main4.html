@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        
+        #bigdiv{
+            margin: 250px
+
+        }
+        .box{
+            padding:20px;
+            ;
+            
+        }
+
+        label {
+            font-size:x-large
+        }
+        nav {
+            display: flex;
+            position: fixed;
+            justify-content: space-between;
+            background-color: #333;
+            padding-top: 10px;
+            width: 100%;
+        }
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-size: x-large;
+            text-align: center;
+            font-style: oblique;
+            text-shadow: #333;
+        }
+        
+        nav a:hover {
+            background-color: #737373;
+        }
+        
+        #cartLogo {
+            width: 30px;
+            height: 30px;
+        }
+
+        input{
+    font-size: 15px;
+    background: rgba(225, 255, 255, 0.2);
+    color: #150e0e;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border-radius: 30px;
+    outline: none;
+        }
+
+        .background-container {
+            background: url('images/BB1ie2HH.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        #div1 {
+            display: flex;
+        }
+
+        #sub{
+
+            width: 200px;
+            height: 40px;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: 380px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <nav id="nav0">
+        <div>
+          <a id ='homeBtn' href="#">HOME</a>
+        </div>
+        
+            
+        </div>
+        <div id="div1">
+            <!-- <h2 id="counting"></h2> -->
+          <a href="#">CART</a>
+          <a href="#">CONTACT</a>
+        </div>
+    </nav>
+    <div class="main-container"></div>
+    <div class="background-container">
+    <div id="bigdiv">
+       <div class="box">
+         <label>Please enter your name and last name here</label> 
+          <input class="car" type="text">
+        </div>
+    <div class="box">
+    <label>Please enter your email adress here</label>
+    <input class="car" type="text">
+    </div>
+    <div class="box">
+        <label>Please enter your phone number here</label>
+        <input class="car" type="text">
+        <button id="sub">submit</button>
+    </div>
+    </div>
+  </div>
+   </div>
+   <script src="main.js"></script>
+</body>
+</html>

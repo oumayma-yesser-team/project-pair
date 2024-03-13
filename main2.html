@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+           
+            background: url('images/BB1ie2HH.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            color: rgb(52, 8, 11);
+            font-family: Arial, sans-serif;
+        }
+
+        .book-container {
+            
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+
+    
+
+        .book-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-right: 140px;
+            border-style :groove
+        }
+
+        .book-image {
+            max-width: 70%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            align-self: flex-start; /* Align image to the top left */
+        }
+
+        .book-description {
+            font-size: 18px;
+            border-style: solid;
+            position: flex;
+            padding: 0px;
+           
+            
+        }
+
+        .book-title{
+
+            margin-top: 100px;
+            text-align: center;
+            display: flex
+        }
+
+        #DescriptionP{
+            color: black;
+            text-align:left;
+            background-color: rgb(160, 160, 160);
+            border: 2px;
+            border-style: solid;
+            border-radius: 4px;
+        }
+        .addToCartButton {
+            margin-left: 60px;
+            padding-bottom: 10px;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <nav id="nav0">
+        <div>
+          <a id ='homeBtn' href="#">HOME</a>
+        </div>
+        <div id="reasearchBarContainer">
+            <input id="reasearchBar" type="text" placeholder="search by title">
+            <button id="btnOk">ok</button>
+        </div>
+        <div id="div1">
+            <!-- <h2 id="counting"></h2> -->
+          <a href="#">CART</a>
+          <a href="#">CONTACT</a>
+        </div>
+    </nav>
+    
+    <div class="book-container">
+        <div class="book-title">Book Title</div>
+    <div><img id="imgDes" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1546091617i/15823480.jpg" class="book-image">
+    <button class="addToCartButton">Add To Cart</button>
+    </div>
+        <div class="book-description">
+            <p>Description:</p>
+            <p id="DescriptionP">
+           
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
