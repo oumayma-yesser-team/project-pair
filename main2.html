@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Details</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         body {
             margin: 0;
@@ -14,7 +15,7 @@
             height: 100vh;
             display: flex;
             justify-content: center;
-            color: white;
+            color: rgb(52, 8, 11);
             font-family: Arial, sans-serif;
         }
 
@@ -27,12 +28,19 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            
         }
+        
+
+
+    
 
         .book-title {
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 10px;
+            margin-right: 140px;
+            border-style :groove
         }
 
         .book-image {
@@ -44,23 +52,34 @@
 
         .book-description {
             font-size: 18px;
-            text-align: center;
+            border-style: solid;
             position: flex;
-            padding: 0px
+            padding: 0px;
+           
+            
         }
 
         .book-title{
 
             margin-top: 100px;
             text-align: center;
+            display: flex
         }
 
         #DescriptionP{
             color: black;
             text-align:left;
-            
+            background-color: rgb(160, 160, 160);
+            border: 2px;
+            border-style: solid;
+            border-radius: 4px;
         }
-        
+        .addToCartButton {
+            margin-left: 60px;
+            padding-bottom: 10px;
+        }
+
+      
     </style>
 </head>
 <body>
@@ -73,6 +92,7 @@
             <button id="btnOk">ok</button>
         </div>
         <div id="div1">
+            <!-- <h2 id="counting"></h2> -->
           <a href="#">CART</a>
           <a href="#">CONTACT</a>
         </div>
@@ -86,8 +106,7 @@
         <div class="book-description">
             <p>Description:</p>
             <p id="DescriptionP">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor, odio eu aliquet lacinia, metus neque vehicula lectus, eu finibus mauris nisl ac odio.
-            </p>
+           
         </div>
     </div>
     <script src="main.js"></script>

@@ -66,7 +66,7 @@
             height: 100%;
             width: 100%;
             align-items: center;
-            padding-top: 100px;
+            padding-top: 20px;
         }
         
         .books img {
@@ -99,6 +99,8 @@
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: lighter;
+            background-color: #959494;
+            border-radius: 15px;
         }
         #btnOk{
             position: relative;
@@ -106,25 +108,48 @@
             padding-right: 10px;
             text-align: center;
         }   
+
+
+        #counting{
+        margin: 15px; 
+        text-align: center;  
+        color: #737373;
+        }
+
+     
+
+      
+        
     </style>
 </head>
 <body>
     
     <nav id="nav0">
+        
         <div>
           <a id ='homeBtn' href="#">HOME</a>
         </div>
         <div id="reasearchBarContainer">
-            <input id="reasearchBar" type="text" placeholder="search by title or author">
+            <input id="reasearchBar" type="text" placeholder="search by title">
             <button id="btnOk">ok</button>
+            
         </div>
+       
+
+        <div id="#Title1"><h1 style="padding-top:10px;" >The Online Library</h1></div>
+       
         <div id="div1">
-          <a href="#">CART</a>
+            
+          <a id="btnCart" href="#">CART</a>
           <a href="#">CONTACT</a>
+          
         </div>
     </nav>
 
 <div class="main-container">
+
+
+    
     <div class="background-container">
         <div class="container1">
             <div class="books"><img id="Crime and Punishment" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1382846449i/7144.jpg">
@@ -151,7 +176,7 @@
                 <p id='book6'>Jane Eyre</p>
                 <button class="addToCartButton"></button>
             </div>
-            <div class="books"><img id="The Fabric of the Cosmos: Space, Time, and the Texture of Reality" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1435242004i/22435.jpg">
+            <div class="books"><img id="The Fabric of the Cosmos" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1435242004i/22435.jpg">
                 <p id='book7'>The Fabric of the Cosmos</p>
                 <button class="addToCartButton"></button>
             </div>
@@ -170,7 +195,7 @@
                 <button class="addToCartButton"></button>
             </div>
             <div class="books"><img id="The Picture of Dorian Gray" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1546103428i/5297.jpg">
-                <p id='book11'>The Picture of Dorian Gray</p>
+                <p id='book11'>The Picture Of Dorian Gray</p>
                 <button class="addToCartButton"></button>
             </div>
             <div class="books"><img id="The Metamorphosis" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1646444605i/485894.jpg">
@@ -195,7 +220,7 @@
                 <p id='book16'>1984</p>
                 <button class="addToCartButton"></button>
             </div>
-            <div class="books"><img id="To Kill a Mockingbird" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1553383690i/2657.jpg">
+            <div class="books"><img id="To Kill a Mocking Bird" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1553383690i/2657.jpg">
                 <p id='book17'>To Kill a Mockingbird</p>
                 <button class="addToCartButton"></button>
             </div>
