@@ -1,16 +1,10 @@
 
 
-<<<<<<< HEAD
 function makebook(title, author, price,description) {
-=======
-
-function makebook(title, author, price) {
->>>>>>> c3bfcba2e6100e118e1ef0c25b59daf048c3d380
     var obj={}
     obj.title=title
     obj.author=author
     obj.price=price
-<<<<<<< HEAD
     obj.description=description
     return obj
 }
@@ -37,33 +31,6 @@ var theFaultInour=makebook("The Fault In Our Stars","John Green",35, "Despite th
 var harryPotter=makebook("Harry Potter and the Sorcerer's Stone", "J.K. Rowling",25,"Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal")
 var thehungergames=makebook("The Hunger Games","Suzanne Collins",45,"In the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps the districts in line")
 var OfMiceandMen=makebook("Of Mice and Men", "john steinbeck",50,"Compassionate, dramatic, and deeply moving, To Kill A Mockingbird takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred")
-=======
-    return obj
-}
-
-var annakarenina=makebook("Anna Karenina", "Leo Toltsoy",50)
-var wutheringheights=makebook("Wuthering Heights","Emily Brontë",40)
-var thebrotherskaramasov=makebook("The Brothers Karamazov" , "Fyodor Dostoevsky",35)
-var janeEyre=makebook("Jane Eyre","Charlotte Brontë",40)
-var crimeAndPunishement=makebook("Crime And Punishment", "Fyodor Dostoevsky", 45)
-var thefabricofthecosmos=makebook("The Fabric Of The Cosmos", "Brian Greene", 35)
-var thesecrethistory=makebook("The Secret History","Donna Tartt",60)
-var thegoldfinch=makebook("The Goldfinch","Donna Tartt",50)
-var warandpeace=makebook("War And Peace", "Leo Toltsoy",70)
-var thePictureOfDorianGray=makebook("The Picture Of Dorian Gray","Oscar Wilde",30)
-var metamporphosis=makebook("The Metamorphosis","Franz Kafka",30)
-var thestranger=makebook("The Stranger","Albert Camus",20)
-var thecatcherintherye=makebook("The Catcher In The Rye", "J.D. Salinger", 25)
-var notesfromunderground=makebook("Notes From The Underground","Fyodor Dostoevsky",30)
-var theBellJar=makebook("The Bell Jar","Sylvia Plath",40)
-var georgeorwell=makebook("1984", "George Orwell",35)
-var thegrandgatsby=makebook("The Great Gatsby","F. Scott Fitzgerald",40)
-var tokillamocking=makebook("To Kill a Mocking Bird","Harper Lee", 25)
-var theFaultInour=makebook("The Fault In Our Stars","John Green",35)
-var harryPotter=makebook("Harry Potter and the Sorcerer's Stone", "J.K. Rowling",25)
-var thehungergames=makebook("The Hunger Games","Suzanne Collins",45)
-
->>>>>>> c3bfcba2e6100e118e1ef0c25b59daf048c3d380
 
 var list=[]
 function makelist(object) {
@@ -91,11 +58,7 @@ makelist(tokillamocking)
 makelist(theFaultInour)
 makelist(harryPotter)
 makelist(thehungergames)
-<<<<<<< HEAD
 makelist(OfMiceandMen)
-=======
-
->>>>>>> c3bfcba2e6100e118e1ef0c25b59daf048c3d380
 
 
 $('.books img').click(function() {
@@ -103,23 +66,16 @@ $('.books img').click(function() {
     var imgid = $(this).attr('id');
     switchToBookDetails(imgSrc,imgid); 
 });
-<<<<<<< HEAD
 var counter = 0  
 
 function switchToBookDetails(source,imgidof) {
     
-=======
-  
-function switchToBookDetails(source,imgidof) {
-    var counter=0 
->>>>>>> c3bfcba2e6100e118e1ef0c25b59daf048c3d380
 
    $("body").load("main2.html", function() {
        $('#imgDes').attr('src', source);
 
 
        for ( var z = 0 ; z < list.length ; z++ ){
-<<<<<<< HEAD
          
         if (list[z].title.toLowerCase() === imgidof.toLowerCase())
 
@@ -131,18 +87,6 @@ function switchToBookDetails(source,imgidof) {
 
        
        function cartt (x){    
-=======
-        console.log(list[z].price ," the list")   
-        if (list[z].title.toLowerCase() === imgidof.toLowerCase())
-
-       {$("#DescriptionP").html(list[z].title)
-        var oneprice =list[z].price 
-        test(oneprice)
-    }
-
-       
-       function test (x){    
->>>>>>> c3bfcba2e6100e118e1ef0c25b59daf048c3d380
         $('.addToCartButton').click(function() {
             
             console.log(counter)
@@ -159,62 +103,8 @@ function switchToBookDetails(source,imgidof) {
 
 }
 
-<<<<<<< HEAD
 
 
-
-//     $(".addToCartButton").click(function(){
-//         var imgId = $(this).closest('.books').children('img').attr('id');
-        
-    
-//         for ( var z = 0 ; z < list.length ; z++ ){
-         
-//             if (list[z].title.toLowerCase() === imgId.toLowerCase())
-    
-//            {
-          
-//             var oneprice =list[z].price 
-//             test(parseInt(oneprice))
-//         }
-    
-    
-    
-    
-    
-    
-//     }});
-// ;
-
-
-
-
-
-
-// function test (x){    
-    
-        
-//         console.log(counter)
-//       return    counter=counter+(x)
-            
-//  };
-
-//  $("btnCart").html(test())
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-=======
->>>>>>> c3bfcba2e6100e118e1ef0c25b59daf048c3d380
 var home0 = document.getElementById('homeBtn')
 
 
@@ -234,35 +124,22 @@ var elem = $('#book1')
 
 
 $("#btnOk").click(function(){
-<<<<<<< HEAD
-    var found = false;
+    var z = false;
     var searchTitle = $("#reasearchBar").val().toLowerCase();
     for(var i=0; i<list.length; i++){
         if(searchTitle === list[i].title.toLowerCase()){
-            found = true;
+            z = true;
             var titre = $("#reasearchBar").val();
             for(var j=0; j<divs.length; j++) {
                 var imgId = divs[j].outerText;
                 
                 if(imgId !== titre) {
                     $(divs[j]).hide();
-=======
-    for(var i=0; i<list.length; i++){
-        if(($("#reasearchBar").val()).toLowerCase()===list[i].title.toLowerCase()){
-            var titre=$("#reasearchBar").val()
-            for(var j=0; j<divs.length; j++) {
-                var imgId=divs[j].outerText
-                console.log('imgId is' , imgId )
-                if(imgId!==titre) {
-                    $(divs[j]).hide()
-
->>>>>>> c3bfcba2e6100e118e1ef0c25b59daf048c3d380
                 }
             }
         }
     }
-<<<<<<< HEAD
-    if (!found) {
+    if (!z) {
         alert("Book not found");
     }
 });
@@ -279,8 +156,3 @@ cart.addEventListener('click', function() {
 function CartSection() {
     $("body").load("main4.html");
 }
-=======
-})
-
-
->>>>>>> c3bfcba2e6100e118e1ef0c25b59daf048c3d380
